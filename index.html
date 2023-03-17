@@ -1,5 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aviator Predictor</title>
+	<style>
+		body {
+			background-color: #0F1626;
+			color: #FFFFFF;
+			font-family: "Roboto", sans-serif;
+			font-size: 20px;
+			text-align: center;
+			padding-top: 100px;
+		}
+		h1 {
+		font-size: 60px;
+		margin-bottom: 50px;
+		letter-spacing: 2px;
+	}
+	
+	input[type="text"], input[type="password"] {
+		padding: 10px;
+		margin-bottom: 20px;
+		border-radius: 30px;
+		border: none;
+		width: 300px;
+		font-size: 18px;
+		background-color: #3A4257;
+		color: #FFFFFF;
+		font-family: "Roboto", sans-serif;
+		font-weight: bold;
+		letter-spacing: 1px;
+	}
+	
+	input[type="submit"] {
+		background-color: #FFD500;
+		color: #0F1626;
+		padding: 12px 30px;
+		border-radius: 30px;
+		border: none;
+		font-size: 18px;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+		font-weight: bold;
+		letter-spacing: 1px;
+		margin-top: 30px;
+		box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+	}
+
+	input[type="submit"]:hover {
+		background-color: #F7B300;
+	}
+</style>
+</head>
+<body>
+	<h1>Aviator Predictor</h1>
+	<form>
+		<label for="username">Usuario:</label><br>
+		<input type="text" id="username" name="username"><br>
+		<label for="password">Password:</label><br>
+		<input type="password" id="password" name="password"><br>
+		<input type="submit" value="Iniciar seccion">
+	</form>
+</body>
+</html>
 <script>
-	<!--
-	document.write(unescape("%3C%21DOCTYPE%20html%3E%0A%3Chtml%3E%0A%3Chead%3E%0A%09%3Ctitle%3EAviator%20Predictor%3C/title%3E%0A%09%3Cstyle%3E%0A%09%09body%20%7B%0A%09%09%09background-color%3A%20%230F1626%3B%0A%09%09%09color%3A%20%23FFFFFF%3B%0A%09%09%09font-family%3A%20%22Roboto%22%2C%20sans-serif%3B%0A%09%09%09font-size%3A%2020px%3B%0A%09%09%09text-align%3A%20center%3B%0A%09%09%09padding-top%3A%20100px%3B%0A%09%09%7D%0A%09%09h1%20%7B%0A%09%09font-size%3A%2060px%3B%0A%09%09margin-bottom%3A%2050px%3B%0A%09%09letter-spacing%3A%202px%3B%0A%09%7D%0A%09%0A%09input%5Btype%3D%22text%22%5D%2C%20input%5Btype%3D%22password%22%5D%20%7B%0A%09%09padding%3A%2010px%3B%0A%09%09margin-bottom%3A%2020px%3B%0A%09%09border-radius%3A%2030px%3B%0A%09%09border%3A%20none%3B%0A%09%09width%3A%20300px%3B%0A%09%09font-size%3A%2018px%3B%0A%09%09background-color%3A%20%233A4257%3B%0A%09%09color%3A%20%23FFFFFF%3B%0A%09%09font-family%3A%20%22Roboto%22%2C%20sans-serif%3B%0A%09%09font-weight%3A%20bold%3B%0A%09%09letter-spacing%3A%201px%3B%0A%09%7D%0A%09%0A%09input%5Btype%3D%22submit%22%5D%20%7B%0A%09%09background-color%3A%20%23FFD500%3B%0A%09%09color%3A%20%230F1626%3B%0A%09%09padding%3A%2012px%2030px%3B%0A%09%09border-radius%3A%2030px%3B%0A%09%09border%3A%20none%3B%0A%09%09font-size%3A%2018px%3B%0A%09%09cursor%3A%20pointer%3B%0A%09%09transition%3A%20background-color%200.3s%20ease%3B%0A%09%09font-weight%3A%20bold%3B%0A%09%09letter-spacing%3A%201px%3B%0A%09%09margin-top%3A%2030px%3B%0A%09%09box-shadow%3A%200px%2010px%2020px%20rgba%280%2C%200%2C%200%2C%200.2%29%3B%0A%09%7D%0A%0A%09input%5Btype%3D%22submit%22%5D%3Ahover%20%7B%0A%09%09background-color%3A%20%23F7B300%3B%0A%09%7D%0A%3C/style%3E%0A%3C/head%3E%0A%3Cbody%3E%0A%09%3Ch1%3EAviator%20Predictor%3C/h1%3E%0A%09%3Cform%3E%0A%09%09%3Clabel%20for%3D%22username%22%3EUsuario%3A%3C/label%3E%3Cbr%3E%0A%09%09%3Cinput%20type%3D%22text%22%20id%3D%22username%22%20name%3D%22username%22%3E%3Cbr%3E%0A%09%09%3Clabel%20for%3D%22password%22%3EPassword%3A%3C/label%3E%3Cbr%3E%0A%09%09%3Cinput%20type%3D%22password%22%20id%3D%22password%22%20name%3D%22password%22%3E%3Cbr%3E%0A%09%09%3Cinput%20type%3D%22submit%22%20value%3D%22Iniciar%20seccion%22%3E%0A%09%3C/form%3E%0A%3C/body%3E%0A%3C/html%3E%0A%3Cscript%3E%0Avar%20users%20%3D%20%5B%0A%20%20%7Busername%3A%20%22aviatoradmin1%22%2C%20password%3A%20%22123%22%2C%20loginAttempts%3A%200%7D%2C%0A%20%20%7Busername%3A%20%22jamis%22%2C%20password%3A%20%22jamis9%22%2C%20loginAttempts%3A%200%7D%2C%0A%20%20%7Busername%3A%20%22cristofer%22%2C%20password%3A%20%22cristofer1%22%2C%20loginAttempts%3A%200%7D%2C%0A%20%20%7Busername%3A%20%22nemy%22%2C%20password%3A%20%22nemy9%22%2C%20loginAttempts%3A%200%7D%2C%0A%20%20%7Busername%3A%20%22jerson%22%2C%20password%3A%20%22jerson29%22%2C%20loginAttempts%3A%200%7D%2C%0A%20%20%7Busername%3A%20%22aviatorpredictor%22%2C%20password%3A%20%22aviator21%22%2C%20loginAttempts%3A%200%7D%2C%0A%20%20%7Busername%3A%20%22predictoraviator%22%2C%20password%3A%20%22predictor9%22%2C%20loginAttempts%3A%200%7D%2C%0A%20%20%7Busername%3A%20%22signalbot%22%2C%20password%3A%20%22signal772%22%2C%20loginAttempts%3A%200%7D%2C%0A%20%20%7Busername%3A%20%22aviatorsignal%22%2C%20password%3A%20%22bot9012%22%2C%20loginAttempts%3A%200%7D%2C%0A%20%20%7Busername%3A%20%22botpredictor%22%2C%20password%3A%20%22bot9988%22%2C%20loginAttempts%3A%200%7D%2C%0A%20%20%7Busername%3A%20%22aviatorbot%22%2C%20password%3A%20%22aviator199%22%2C%20loginAttempts%3A%200%7D%0A%5D%3B%0A%0Adocument.querySelector%28%22form%22%29.addEventListener%28%22submit%22%2C%20function%28event%29%20%7B%0A%20%20event.preventDefault%28%29%3B%0A%20%20var%20username%20%3D%20document.getElementById%28%22username%22%29.value%3B%0A%20%20var%20password%20%3D%20document.getElementById%28%22password%22%29.value%3B%0A%20%20%0A%20%20for%20%28var%20i%20%3D%200%3B%20i%20%3C%20users.length%3B%20i++%29%20%7B%0A%20%20%20%20if%20%28username%20%3D%3D%3D%20users%5Bi%5D.username%20%26%26%20password%20%3D%3D%3D%20users%5Bi%5D.password%29%20%7B%0A%20%20%20%20%20%20if%20%28users%5Bi%5D.loginAttempts%20%3C%2010%29%20%7B%20//%20verificar%20si%20el%20usuario%20tiene%20menos%20de%2010%20intentos%20de%20inicio%20de%20sesi%F3n%0A%20%20%20%20%20%20%20%20users%5Bi%5D.loginAttempts++%3B%20//%20aumentar%20el%20n%FAmero%20de%20intentos%20de%20inicio%20de%20sesi%F3n%20del%20usuario%0A%20%20%20%20%20%20%20%20window.location.href%20%3D%20%22dashboard.html%22%3B%0A%20%20%20%20%20%20%20%20return%3B%0A%20%20%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20alert%28%22Este%20usuario%20ha%20excedido%20el%20n%FAmero%20m%E1ximo%20de%20intentos%20de%20inicio%20de%20sesi%F3n.%20Por%20favor%2C%20comun%EDcate%20con%20el%20equipo%20de%20soporte%20para%20obtener%20ayuda.%20%u260E%uFE0F%uD83D%uDEE9%uFE0F%u2708%uFE0F%22%29%3B%0A%20%20%20%20%20%20%20%20return%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%20%20%0A%20%20alert%28%22Oops%2C%20algo%20sali%F3%20mal.%20Por%20favor%2C%20revisa%20tu%20nombre%20de%20usuario%20y%20contrase%F1a%20y%20vuelve%20a%20intentarlo.%20Si%20sigues%20teniendo%20problemas%2C%20%A1llama%20a%20nuestro%20equipo%20de%20soporte%20para%20obtener%20ayuda%21%20%u260E%uFE0F%uD83D%uDEE9%uFE0F%u2708%uFE0F%22%29%3B%0A%7D%29%3B%0A%3C/script%3E%0A%3C/body%3E%0A%3C/html"));
-	//-->
-	</script>
+	var users = [
+		{username: "aviatoradmin1", password: "123"},
+		{username: "jamis", password: "jamis9"},
+		{username: "cristofer", password: "cristofer1"},
+		{username: "nemy", password: "nemy9"},
+		{username: "jerson", password: "jerson29"},
+		{username: "aviatorpredictor", password: "aviator21"},
+		{username: "predictoraviator", password: "predictor9"},
+		{username: "signalbot", password: "signal772"},
+		{username: "aviatorsignal", password: "bot9012"},
+		{username: "botpredictor", password: "bot9988"},
+		{username: "aviatorbot", password: "aviator199"}
+	];
+	document.querySelector("form").addEventListener("submit", function(event) {
+		event.preventDefault();
+		var username = document.getElementById("username").value;
+		var password = document.getElementById("password").value;
+		
+		for (var i = 0; i < users.length; i++) {
+			if (username === users[i].username && password === users[i].password) {
+				window.location.href = "dashboard.html";
+				return;
+			}
+		}
+		
+		alert("Oops, algo salió mal. Por favor, revisa tu nombre de usuario y contraseña y vuelve a intentarlo. Si sigues teniendo problemas, ¡llama a nuestro equipo de soporte para obtener ayuda! ☎️🛩️✈️");
+});
+</script>
+</body>
+</html
