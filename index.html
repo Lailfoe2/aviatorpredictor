@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aviator Predictor</title>
+	<style>
+		body {
+			background-color: #0F1626;
+			color: #FFFFFF;
+			font-family: "Roboto", sans-serif;
+			font-size: 20px;
+			text-align: center;
+			padding-top: 100px;
+		}
+		h1 {
+		font-size: 60px;
+		margin-bottom: 50px;
+		letter-spacing: 2px;
+	}
+	
+	input[type="text"], input[type="password"] {
+		padding: 10px;
+		margin-bottom: 20px;
+		border-radius: 30px;
+		border: none;
+		width: 300px;
+		font-size: 18px;
+		background-color: #3A4257;
+		color: #FFFFFF;
+		font-family: "Roboto", sans-serif;
+		font-weight: bold;
+		letter-spacing: 1px;
+	}
+	
+	input[type="submit"] {
+		background-color: #FFD500;
+		color: #0F1626;
+		padding: 12px 30px;
+		border-radius: 30px;
+		border: none;
+		font-size: 18px;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+		font-weight: bold;
+		letter-spacing: 1px;
+		margin-top: 30px;
+		box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+	}
+
+	input[type="submit"]:hover {
+		background-color: #F7B300;
+	}
+</style>
+</head>
+<body>
+	<h1>Aviator Predictor</h1>
+	<form>
+		<label for="username">Usuario:</label><br>
+		<input type="text" id="username" name="username"><br>
+		<label for="password">Password:</label><br>
+		<input type="password" id="password" name="password"><br>
+		<input type="submit" value="Iniciar seccion">
+	</form>
+</body>
+</html>
+<script>
+	var users = [
+		{username: "aviatoradmin1", password: "elpepe1"},
+		{username: "usuario2", password: "contraseña2"}
+	];
+	document.querySelector("form").addEventListener("submit", function(event) {
+		event.preventDefault();
+		var username = document.getElementById("username").value;
+		var password = document.getElementById("password").value;
+		
+		for (var i = 0; i < users.length; i++) {
+			if (username === users[i].username && password === users[i].password) {
+				window.location.href = "dashboard.html";
+				return;
+			}
+		}
+		
+		alert("Oops, algo salió mal. Por favor, revisa tu nombre de usuario y contraseña y vuelve a intentarlo. Si sigues teniendo problemas, ¡llama a nuestro equipo de soporte para obtener ayuda! ☎️🛩️✈️");
+});
+</script>
+</body>
+</html

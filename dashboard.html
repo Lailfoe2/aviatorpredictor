@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="popup.js"></script>
+	<script>
+	  $(document).ready(function() {
+		actualizarReloj();
+	  });
+	</script>
+	<title>Aviator Predictor - Dashboard</title>
+	<style>
+body {
+    background-color: #020101;
+    background-image: url("fondo.png");
+    background-size: 391px 691px;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+.contenedor {
+    position: relative;
+    height: 791px; /* ajusta la altura del contenedor para mover la imagen hacia abajo */
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input[type="text"] {
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    width: 53px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    background-color: #0331ff;
+    color: #1de949;
+    box-shadow: 0px 0px 10px 0px #e9911d;
+    transition: all 0.2s ease-in-out;
+}
+input[type="text"]:focus {
+outline: none;
+background-color: #000000;
+box-shadow: 0px 0px 10px 0px #08f700;
+}
+
+input[type="text"]::placeholder {
+color: #ffffff;
+}
+button[type="submit"] {
+background-color: #1b438d;
+border: none;
+padding: 10px;
+border-radius: 5px;
+color: white;
+font-size: 16px;
+cursor: pointer;
+margin-top: 10px;
+font-family: Arial, sans-serif;
+font-weight: bold;
+text-transform: uppercase;
+transition: all 0.2s ease-in-out; /* añade una transición para suavizar el efecto futurista */
+}
+button[type="submit"]:hover {
+background-color: #00c410;
+color: #0074D9;
+box-shadow: 0px 0px 5px 0px #0074D9;
+}
+#reloj{
+font-size: 50px;
+margin-top: 30px;
+font-weight: bold;
+color: rgb(5, 6, 15);
+}
+</style>
+</head>
+<body>
+	<div class="contenedor">
+		<div class="center">
+			<div id="reloj"></div>
+			<div style="height: 200px;"></div> <!-- agregar espacio en blanco para mover el contenido hacia abajo -->
+			<input type="text" placeholder="Cuota"><br>
+			<div style="height: 50px;"></div> <!-- agregar más espacio en blanco -->
+			<button type="submit">PREDECIR</button>
+	</div>
+  </div>	  
+</body>
+</html>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("button[type='submit']").click(function(){
+            var resultado_anterior = $("input[type='text']").val();
+            var resultados_anteriores = ["2.04x", "2.68x", "3.48x", "4.35x", "1.03x", "3.10x", "2.74x", "1.60x", "1.40x", "2.77x", "3.29x", "1.42x", "2.07x", "1.01x", "1.20x", "1.04x", "1.58x", "5.10x", "1.14x", "1.92x", "10.93x", "3.11x", "2.35x", "1.00x", "3.34x", "45.74X", "317x", "1.71x", "1.00x", "2.48x", "1.40x", "1.63x", "2.29x", "1.14x", "1.24x", "14.01x", "24.33x", "6.68x", "19.94x", "3.31x", "6.77x", "1.58x", "1.06x", "2.99x", "1.87x", "1.00x", "8.44x", "3.52x", "1.00x", "1.99x", "1.30x", "1.13x", "1.48x", "1.00x", "14.92x", "1.89x", "205.40x", "1.04x", "1.27x", "3.32x", "1.36x", "1.64x", "1.52X", "4.72x", "3.61x", "1.89x", "11.27x", "1.33x", "1.41x", "3.07x", "1.00x", "8.76x", "1.01x", "1.00x", "1.12x", "5.64x", "1.41x", "1.21x", "3.56x", "10.86x", "1.47x", "1.02x", "32.54x", "2.66x", "11.21x", "1.17x", "1.00x", "3.04x", "1.04x", "1.09x", "7.15x", "6.44x", "6.42x", "1.24x", "1.21x", "1.03x", "1.16x", "2.96x", "1.63x", "6.03x", "1.01x", "1.68x", "1.22x", "3.03x", "9.18x", "1.41x", "2.05x", "1.78x", "2.34x", "4.11x", "3.83x", "3.78x", "1.28x", "1.16x", "1.65x", "3.33x", "10.96x", "2.17x", "1.13x", "1.71x"];
+            var resultado_correspondiente = resultados_anteriores[resultados_anteriores.indexOf(resultado_anterior) - 1];
+            alert("⚠️ Cuota Anterior " + resultado_anterior + " ⏭️ Predicción: entrar en 1 minuto y 40 segundos ⏱️ Cuota de Retiro: " + resultado_correspondiente);
+        });
+    });
+    </script>    
+    </script>    
